@@ -1,0 +1,24 @@
+body, .stApp {
+    background-color: #c4c4c4 !important; 
+}
+
+body {
+    color: #fdfdfd; 
+}
+
+/* Optional: Modify header colors */
+h1, h2, h3 {
+    color: #030000;
+}
+
+/* Style metrics */
+.stMetric {
+    background-color: #ffffff; 
+    border: 2px solid #000000; 
+}
+
+/* Style dataframes */
+.stDataFrame {
+    border: 2px solid #000000; 
+}
+
