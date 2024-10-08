@@ -19,8 +19,8 @@ p1, p2, p3 {
 }
 
 .stMetric {
-    background-color: #474747; 
-    border: 5px solid #7ddefc46; 
+    background-color: rgba(71, 71, 71, 0.3);
+    border: 5px solid rgba(125, 222, 252, 0.2); 
 }
 
 /* Some simple test on firefox inspector mode */
