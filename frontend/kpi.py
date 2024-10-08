@@ -82,7 +82,6 @@ class GeographyKPI:
         st.plotly_chart(fig) 
 
 
-import plotly.express as px
 
 class OSKPI:
     def __init__(self) -> None:
