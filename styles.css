@@ -6,19 +6,25 @@ body {
     color: #fdfdfd; 
 }
 
-/* Optional: Modify header colors */
 h1, h2, h3 {
     color: #030000;
 }
 
-/* Style metrics */
-.stMetric {
-    background-color: #ffffff; 
-    border: 2px solid #000000; 
+p1, p2, p3 {
+    color: #030000;
 }
 
-/* Style dataframes */
+.stMetric {
+    background-color: #000000; 
+    border: 2px solid #ff0000; 
+}
+
 .stDataFrame {
     border: 2px solid #000000; 
 }
 
+
+/* Some simple test on firefox inspector mode */
+.st-emotion-cache-1wivap2 {
+    color: #FFFFFF; /* Set text color to white */
+}
