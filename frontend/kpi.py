@@ -37,6 +37,9 @@ def convert_iso2_to_iso3(iso2):
         return None
 
 # Klass för min Geography KPI
+import plotly.express as px
+import streamlit as st
+
 class GeographyKPI:
     def __init__(self) -> None:
         # Hämtar information från databasen, fungerade endast med en sum här istället för direkt till marts
@@ -77,7 +80,16 @@ class GeographyKPI:
             title="Totala visningar per Land" 
         )
 
-        st.plotly_chart(fig) 
+        # transparent runt map border
+        fig.update_layout(
+            plot_bgcolor='rgba(0,0,0,0)', 
+            paper_bgcolor='rgba(0,0,0,0)',  
+            title_font=dict(size=20),  
+            margin=dict(l=0, r=0, t=30, b=0)  
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
 
 class OSKPI:
     def __init__(self) -> None:
