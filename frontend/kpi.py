@@ -82,6 +82,8 @@ class GeographyKPI:
         st.plotly_chart(fig) 
 
 
+import plotly.express as px
+
 class OSKPI:
     def __init__(self) -> None:
         self._os = QueryDatabase("SELECT * FROM marts.os;").df
@@ -129,10 +131,18 @@ class OSKPI:
             color="Procent av totalt"  
         )
 
+        fig.update_layout(
+            plot_bgcolor='black',  
+            paper_bgcolor='black',  
+            font_color='white',  
+            title_font=dict(color='white'),  
+        )
+
         # transparence på staplarna
         fig.for_each_trace(lambda t: t.update(marker=dict(opacity=0.5) if t.name != selected_os else dict(opacity=1)))
 
         st.plotly_chart(fig) 
+
 
 
 class ExposureKPI:
