@@ -1,6 +1,10 @@
 body, .stApp {
-    background-color: #c4c4c4 !important; 
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-size: cover;
+    background-repeat: no-repeat; /
+    background-color: #283237; 
 }
+
 
 body {
     color: #fdfdfd; 
@@ -23,8 +27,7 @@ p1, p2, p3 {
     border: 2px solid #000000; 
 }
 
-
 /* Some simple test on firefox inspector mode */
 .st-emotion-cache-1wivap2 {
-    color: #FFFFFF;
+    color: #FFFFFF; /* Set text color to white */
 }
