@@ -25,7 +25,6 @@ class ContentKPI:
                 st.metric(kpi, round(kpis[kpi]))  # Rundar av värdet
         st.dataframe(df)  
 
-
 class DeviceKPI:
     pass
 
@@ -36,7 +35,6 @@ def convert_iso2_to_iso3(iso2):
         return pycountry.countries.get(alpha_2=iso2).alpha_3
     except AttributeError:
         return None
-
 
 # Klass för min Geography KPI
 class GeographyKPI:
@@ -80,8 +78,6 @@ class GeographyKPI:
         )
 
         st.plotly_chart(fig) 
-
-
 
 class OSKPI:
     def __init__(self) -> None:

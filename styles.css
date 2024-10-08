@@ -27,3 +27,7 @@ p1, p2, p3 {
 .st-emotion-cache-1wivap2 {
     color: #FFFFFF;
 }
+
+.stPlotlyChart {
+    opacity: 0.1; 
+}
